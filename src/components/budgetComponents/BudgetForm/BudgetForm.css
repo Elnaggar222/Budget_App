@@ -1,0 +1,14 @@
+.new-budget{
+    padding: 2rem 1.5rem;
+}
+
+.new-budget h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.new-budget button{
+    margin-top: 1rem;
+}
+
+

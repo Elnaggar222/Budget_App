@@ -1,0 +1,66 @@
+.hero_imgs{
+    height: 350px;
+    position: relative;
+}
+.hero_imgs img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* object-fit: cover; */
+}
+
+.hero_imgs::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-bg-transparet);
+    top: 0;
+    left: 0;
+}
+.AllBoxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: -150px;
+}
+.Box{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 2px;
+}
+
+.Box:first-child{
+    background-color: var(--color-primary);
+}
+.Box:nth-child(2){
+    background-color: var(--color-success);
+}
+.Box:nth-child(3){
+    background-color: var(--color-error);
+}
+
+.Box .Icon{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.Box .moneyAndTitle > div{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.Box .moneyAndTitle > small{
+    color: var(--color-text-light);
+}

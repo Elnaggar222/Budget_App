@@ -1,0 +1,9 @@
+.dougnut-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.dougnut-chart-box{
+    max-width: 400px;
+}

@@ -1,0 +1,27 @@
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+}
+
+.tabs .tab_title{
+    background: var(--gradient-bg-light);
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.tabs .tab_title.active{
+    transform: scale(1.1);
+    transform-origin:center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+
+}
+
+@media screen and (max-width: 991px) {
+    .tabs .tab_title.active{
+        transform: scale(1.05);
+    }
+}
+
+.tab_content{
+    margin-top: 0.5rem;
+}
